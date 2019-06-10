@@ -126,7 +126,7 @@ footer .snsIcons .snsIcon:hover path{
 
 @media (max-width: 767px) {
    header {
-      margin: 20px 0 100px 0;
+      margin: 8px 0 100px 0;
       padding: 0;
    }
    #navToggle .span1,
