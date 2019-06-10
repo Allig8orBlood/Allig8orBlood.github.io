@@ -9,6 +9,10 @@ h1,p,a {
 a {
    text-decoration: none;
 }
+ul {
+   list-style: none;
+   padding: 0;
+}
 header {
    padding: 20px 50px;
    overflow: hidden;
@@ -18,7 +22,6 @@ h1 {
    float: left;
 }
 .desktopMenu ul {
-   list-style: none;
    float: right;
    margin: 0;
 }
@@ -68,7 +71,8 @@ main {
    width: 270px;
    height: 230px;
    margin-right: 200px;
-   border: 3px solid #ffffff;
+   border: 2px solid #ffffff;
+   border-radius: 5px;
 }
 .mainItemWrapper .active {
    border: 3px solid #e90f0e;
@@ -80,11 +84,11 @@ main {
 }
 .mainItem img {
    display: block;
-   margin: 0 auto;
+   margin: 15px auto 0 auto;
    width: 235px;
    height: 155px;
    object-fit: cover;
-   padding-top: 20px;
+   border-radius: 5px;
 }
 .mainItem p {
    margin: 10px 0 16px 17px;
@@ -121,9 +125,50 @@ footer .snsIcons .snsIcon:hover path{
 }
 
 @media (max-width: 767px) {
-
    header {
-      margin-bottom: 100px;
+      margin: 20px 0 100px 0;
+      padding: 0;
+   }
+   #navToggle .span1,
+   #navToggle:before,
+   #navToggle:after {
+      display: block;
+      width: 20px;
+      height: 2px;
+      content: "";
+      border-radius: 3px;
+      background-color: #ffffff;
+   }
+   #navToggle .span1 {
+      position: relative;
+      margin: 3px 0;
+   }
+   #navToggle {
+      position: absolute;
+      float: left;
+      cursor: pointer;
+      width: 20px;
+      height: 12px;
+      padding: 0.7em 1.5em;
+   }
+   /* .active {
+      background-color: #e90f0e;
+      transition: all .2s;
+   } */
+   #toggleMenu {
+      width: 100%;
+      position: fixed;
+      background-color: #e90f0e;
+   }
+   #toggleMenu ul {
+      margin-left: 20px;
+   }
+   #toggleMenu ul li {
+      padding-bottom: 6px;
+   }
+   #toggleMenu ul li a {
+      color: #ffffff;
+      font-size: 12px;
    }
    .container {
       display: block;
@@ -133,19 +178,10 @@ footer .snsIcons .snsIcon:hover path{
    .desktopMenu {
       display: none;
    }
-   span {
-      border: 1px solid #ffffff;
-      width: 16px;
-      height: 3px;
-      margin-bottom: 10px;
-      background-color: #ffff;
-      position: absolute;
-      top: 40px;
-      left: 40px;
-   }
     h1 {
       float: none;
       text-align: center;
+      margin: 0;
    }
    .mainItemWrapper {
       width: 90%;
@@ -158,11 +194,10 @@ footer .snsIcons .snsIcon:hover path{
    }
    .mainItem img {
       display: block;
-      margin: 0 auto;
+      margin: 15px auto 0 auto;
       width: 90%;
       height: auto;
       object-fit: cover;
-      padding-top: 20px;
    }
    footer .snsIcons {
       margin-bottom: 0;
