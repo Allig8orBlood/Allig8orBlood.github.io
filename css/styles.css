@@ -14,12 +14,17 @@ ul {
    padding: 0;
 }
 header {
-   padding: 20px 50px;
+   padding: 0 50px;
    overflow: hidden;
+   border-bottom: 1px solid #2c2c2c;
 }
 h1 {
-   margin: 10px 0 0 0;
+   margin: 20px 0 0 0;
    float: left;
+}
+h1 a:hover {
+   color: #e90f0e;
+   transition: all .3s ease;
 }
 .desktopMenu ul {
    float: right;
@@ -32,7 +37,7 @@ h1 {
 .desktopMenu ul li a {
    position: relative;
    display: inline-block;
-   line-height: 58px;
+   line-height: 80px;
    width: 120px;
    text-align: center;
    font-size: 14px;
@@ -71,12 +76,9 @@ main {
    width: 270px;
    height: 230px;
    margin-right: 200px;
-   border: 2px solid #ffffff;
+   border: 2px solid #2c2c2c;
    border-radius: 5px;
-}
-.mainItemWrapper .active {
-   border: 3px solid #e90f0e;
-   transition: all .3s ease;
+   background-color: #2c2c2c;
 }
 .container {
    display: flex;
@@ -90,6 +92,10 @@ main {
    object-fit: cover;
    border-radius: 5px;
 }
+.mainItem img:hover {
+   opacity: .5;
+   transition: .3s;
+}
 .mainItem p {
    margin: 10px 0 16px 17px;
 }
@@ -98,16 +104,18 @@ main {
    transition: all .3s ease;
 }
 footer {
-   margin-top: 70px;
+   height: 70px;
+   margin-top: 130px;
+   border-top: 1px solid #2c2c2c;
 }
 footer p {
-   margin-left: 50px;
+   margin: 25px 0 0 50px;
    opacity: 0.3;
    font-size: 12px;
    float: left;
 }
 footer .snsIcons {
-   margin: 0 50px 25px 0;
+   margin: 20px 50px 0 0;
    float: right;
 }
 footer .snsIcons .snsIcon {
@@ -149,7 +157,7 @@ footer .snsIcons .snsIcon:hover path{
       cursor: pointer;
       width: 20px;
       height: 12px;
-      padding: 0.7em 1.5em;
+      padding: 1.2em 1.5em;
    }
    /* .active {
       background-color: #e90f0e;
@@ -181,13 +189,13 @@ footer .snsIcons .snsIcon:hover path{
     h1 {
       float: none;
       text-align: center;
-      margin: 0;
+      margin: 0 0 7px 0;
    }
    .mainItemWrapper {
-      width: 90%;
+      width: 80%;
       height: auto;
       margin: 80px auto;
-      border: 3px solid #ffffff;
+      border: 2px solid #2c2c2c;
    }
    .mainItem {
       width: 100%;
