@@ -157,6 +157,9 @@ footer .snsIcons .snsIcon:hover path{
       margin: 8px 0 100px 0;
       padding: 0;
    }
+   .scrollMenu {
+      display: none!important;
+   }
    #navToggle .span1,
    #navToggle:before,
    #navToggle:after {
@@ -172,17 +175,13 @@ footer .snsIcons .snsIcon:hover path{
       margin: 3px 0;
    }
    #navToggle {
-      position: absolute;
+      position: fixed;
       float: left;
       cursor: pointer;
       width: 20px;
       height: 12px;
       padding: 1.2em 1.5em;
    }
-   /* .active {
-      background-color: #e90f0e;
-      transition: all .2s;
-   } */
    #toggleMenu {
       width: 100%;
       position: fixed;
