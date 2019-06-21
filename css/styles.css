@@ -68,6 +68,26 @@ h1 a:hover {
    color: #e90f0e;
    transition: all .3s ease;
 }
+.scrollMenu {
+   position: fixed;
+   top: 50px;
+   left: 20px;
+   background-color: #e90f0e;
+}
+.scrollMenu ul {
+   margin: 0;
+   padding: 10px 0;
+}
+.scrollMenu ul li a {
+   color: #ffffff;
+   font-size: 14px;
+   padding: 10px 20px;
+   display: block;
+   transition: all 0.5s;
+}
+.scrollMenu ul li a:hover {
+   color: #000000;
+}
 main {
    margin: 0 auto;
    max-width: 1150px;
