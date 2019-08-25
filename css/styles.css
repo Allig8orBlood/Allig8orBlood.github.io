@@ -90,31 +90,39 @@ h1 a:hover {
 }
 main {
    margin: 0 auto;
-   max-width: 1150px;
-}
-.mainItemWrapper {
-   width: 270px;
-   height: 230px;
-   margin-right: 200px;
-   border: 2px solid #2c2c2c;
-   border-radius: 5px;
-   background-color: #2c2c2c;
+   width: 70%;
 }
 .container {
    display: flex;
    margin-top: 100px;
 }
+.mainItemWrapper {
+   flex: 1;
+   width: 100%;
+   height: 100%;
+   padding: 30% 0 0;
+   position: relative;
+   margin: 10px;
+}
+.mainItem {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border: 2px solid #2c2c2c;
+   background: #2c2c2c;
+}
 .mainItem img {
    display: block;
-   margin: 15px auto 0 auto;
-   width: 235px;
-   height: 155px;
+   margin: 30px auto 0 auto;
+   width: 90%;
    object-fit: cover;
-   border-radius: 5px;
+   transition: .3s;
+   opacity: .5;
 }
 .mainItem img:hover {
-   opacity: .5;
-   transition: .3s;
+   opacity: 1;
 }
 .mainItem p {
    margin: 10px 0 16px 17px;
@@ -154,7 +162,7 @@ footer .snsIcons .snsIcon:hover path{
 
 @media (max-width: 767px) {
    header {
-      margin: 8px 0 100px 0;
+      margin: 8px 0 50px 0;
       padding: 0;
    }
    .scrollMenu {
@@ -211,13 +219,11 @@ footer .snsIcons .snsIcon:hover path{
       margin: 0 0 7px 0;
    }
    .mainItemWrapper {
-      width: 80%;
-      height: auto;
-      margin: 80px auto;
-      border: 2px solid #2c2c2c;
+      padding: 90% 0 0;
+      margin: 0 0 40px;
    }
    .mainItem {
-      width: 100%;
+      margin: 0;
    }
    .mainItem img {
       display: block;
@@ -225,6 +231,9 @@ footer .snsIcons .snsIcon:hover path{
       width: 90%;
       height: auto;
       object-fit: cover;
+   }
+   footer {
+      margin: 80px 0 0 0;
    }
    footer .snsIcons {
       margin-bottom: 0;
