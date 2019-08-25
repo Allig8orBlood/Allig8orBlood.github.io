@@ -194,6 +194,7 @@ footer .snsIcons .snsIcon:hover path{
       width: 100%;
       position: fixed;
       background-color: #e90f0e;
+      z-index: 3;
    }
    #toggleMenu ul {
       margin-left: 20px;
