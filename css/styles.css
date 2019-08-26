@@ -15,16 +15,17 @@ ul {
 }
 header {
    padding: 0 50px;
-   overflow: hidden;
    border-bottom: 1px solid #2c2c2c;
 }
 h1 {
-   margin: 20px 0 0 0;
-   float: left;
+   margin: 15px 0;
+}
+h1 a {
+   vertical-align: middle;
 }
 h1 a:hover {
-   color: #e90f0e;
    transition: all .3s ease;
+   color: #e90f0e;
 }
 .desktopMenu ul {
    float: right;
@@ -103,6 +104,7 @@ main {
    padding: 30% 0 0;
    position: relative;
    margin: 10px;
+   box-sizing: border-box;
 }
 .mainItem {
    position: absolute;
@@ -111,29 +113,37 @@ main {
    width: 100%;
    height: 100%;
    border: 2px solid #2c2c2c;
-   background: #2c2c2c;
+   background: #ffffff;
+   box-sizing: border-box;
+   /* transition: .3s; */
+}
+.mainItem:hover{
+   border: 3px solid #e90f0e;
+}
+.mainItem:hover img {
+   opacity: 1;
+}
+.mainItem:hover p a {
+   color: #e90f0e;
 }
 .mainItem img {
    display: block;
    margin: 30px auto 0 auto;
    width: 90%;
    object-fit: cover;
-   transition: .3s;
-   opacity: .5;
-}
-.mainItem img:hover {
-   opacity: 1;
+   /* transition: .3s; */
+   opacity: .7;
 }
 .mainItem p {
    margin: 10px 0 16px 17px;
 }
-.mainItem a:hover {
-   color: #e90f0e;
-   transition: all .3s ease;
+.mainItem p a {
+   /* transition: all .3s ease; */
+   color: #000000;
 }
 footer {
    height: 70px;
-   margin-top: 130px;
+   margin-top: 300px;
    border-top: 1px solid #2c2c2c;
 }
 footer p {
@@ -220,7 +230,7 @@ footer .snsIcons .snsIcon:hover path{
       margin: 0 0 7px 0;
    }
    .mainItemWrapper {
-      padding: 90% 0 0;
+      padding: 90% 0 3%;
       margin: 0 0 40px;
    }
    .mainItem {
@@ -232,6 +242,10 @@ footer .snsIcons .snsIcon:hover path{
       width: 90%;
       height: auto;
       object-fit: cover;
+      opacity: .8;
+   }
+   .mainItem a {
+      font-size: 14px;
    }
    footer {
       margin: 80px 0 0 0;
